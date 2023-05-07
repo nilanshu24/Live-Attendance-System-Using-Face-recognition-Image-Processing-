@@ -26,20 +26,20 @@ sheet1 = wb.add_sheet('attendance')
 
 
 
-image1 = face_recognition.load_image_file("images/limay.jpg")
+image1 = face_recognition.load_image_file("images/image1.jpg")
 image1_encoding = face_recognition.face_encodings(image1)[0]
 
-image2 = face_recognition.load_image_file("images/ninad.jpg")
+image2 = face_recognition.load_image_file("images/image2.jpg")
 image2_encoding = face_recognition.face_encodings(image2)[0]
 
-image3 = face_recognition.load_image_file("images/sam.png")
+image3 = face_recognition.load_image_file("images/image3.jpg")
 image3_encoding = face_recognition.face_encodings(image3)[0]
 
-image4 = face_recognition.load_image_file("images/nilo.jpg")
+image4 = face_recognition.load_image_file("images/image4.jpg")
 image4_encoding = face_recognition.face_encodings(image4)[0]
 
 known_face_encoding = [image1_encoding,image2_encoding,image3_encoding,image4_encoding]
-known_face_names = ["Limay", "Ninad", "Samiksha", "Nilanshu"]
+known_face_names = ["Magnus", "Hikaru", "Vishy", "Levy"]
 students = known_face_names.copy()
 
 face_locations = []
